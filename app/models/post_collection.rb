@@ -1,0 +1,2 @@
+class PostCollection < AbstractCollection
+end
