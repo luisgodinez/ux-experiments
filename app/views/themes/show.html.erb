@@ -1,0 +1,17 @@
+<% content_for :head do %>
+  <%= javascript_include_tag @theme.js_file_name, 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag @theme.js_file_name, media: 'all', 'data-turbolinks-track' => true %>
+<% end %>
+
+<div id="masonry-container" class="transitions-enabled infinite-scroll clearfix">
+  <div class="box col4 template">
+    <div class="img-container">
+    </div>
+    <div class="content-container">
+      <p class="title">
+      </p>
+      <p class="username">
+      </p>
+    </div>
+  </div>
+</div>

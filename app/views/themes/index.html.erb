@@ -1,0 +1,16 @@
+<%= render partial: 'index_nav' %>
+
+<div class="container themes-index-container">
+  <div class="theme-selector">
+    <div class="header">
+      Select a theme
+    </div>
+    <ul class="content">
+      <% @themes.each do |theme| %>
+        <li>
+          <%= link_to theme.name, theme_path(theme.id), class: 'nav-link' %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
